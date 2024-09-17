@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+  @apply px-4 py-1.5 rounded-full relative text-white/80 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
+}
+
+/* Keyframes for Waving */
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-8deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(14deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave-hand {
+  animation: wave 2s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px #1a1a2e, 0 0 15px #1a1a2e, 0 0 20px #1a1a2e;
+  }
+  50% {
+    box-shadow: 0 0 10px #1a1a2e, 0 0 30px #1a1a2e, 0 0 40px #1a1a2e;
+  }
+}
+
+.glow-btn {
+  animation: glow 2s infinite ease-in-out alternate;
+  box-shadow: 0 0 5px #1a1a2e, 0 0 15px #1a1a2e, 0 0 20px #1a1a2e;
+}
+
+@layer utilities {
+  .container {
+    @apply lg:max-w-5xl;
+  }
+}
