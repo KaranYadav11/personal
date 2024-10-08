@@ -1,8 +1,42 @@
+import { useEffect, useRef, useState } from "react";
 import Card from "../components/Card";
 import CardHeader from "../components/CardHeader";
 import SectionHeader from "../components/SectionHeader";
+import { motion } from "framer-motion";
 
 function AboutMe() {
+  const text =
+    "A dedicated React & MERN developer with a strong foundation in JavaScript and expertise in crafting engaging user interfaces with React.js. I thrive on challenges and have honed my problem-solving skills through coding practice on platforms like LeetCode, where I've successfully solved 200+ coding problems. I’m constantly learning and exploring new technologies to expand my skills.";
+
+  const letterVariants = {
+    hidden: { opacity: 0, y: 20, scale: 0.8 }, // Added scale
+    visible: { opacity: 1, y: 0, scale: 1 }, // Restored scale
+  };
+
+  const [isVisible, setIsVisible] = useState(false);
+  const textRef = useRef(null); // Ref to attach to the text element
+
+  // Use Intersection Observer to detect when the text comes into view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true); // Set isVisible to true when in view
+          observer.disconnect(); // Stop observing once it has entered the view
+        }
+      },
+      { threshold: 0 } // Trigger when 10% of the element is visible
+    );
+
+    if (textRef.current) {
+      observer.observe(textRef.current); // Observe the text element
+    }
+
+    return () => {
+      observer.disconnect(); // Clean up the observer on component unmount
+    };
+  }, []);
+
   return (
     <section className="py-16 lg:py-28" id="about">
       <div className="container">
@@ -24,14 +58,26 @@ function AboutMe() {
                   </span>
                 </div>
                 <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                <p className="text-sm text-center lg:text-base text-white/60 mt-1 lg:mt-2">
-                  A dedicated React & MERN developer with a strong foundation in
-                  JavaScript and expertise in crafting engaging user interfaces
-                  with React.js. I thrive on challenges and have honed my
-                  problem-solving skills through coding practice on platforms
-                  like LeetCode, where I&apos;ve successfully solved 200+ coding
-                  problems. I’m constantly learning and exploring new
-                  technologies to expand my skills.
+                <p
+                  className="text-sm text-center lg:text-base text-white/60 mt-1 lg:mt-2"
+                  ref={textRef}
+                >
+                  {text.split("").map((char, index) => (
+                    <motion.span
+                      key={index}
+                      variants={letterVariants}
+                      initial="hidden" // Start state for each letter
+                      animate={isVisible ? "visible" : "hidden"}
+                      transition={{
+                        duration: 0.1,
+                        delay: isVisible ? index * 0.025 : 0, // Staggered delay for letter reveal
+                        type: "spring", // Optional: Change to "spring" for a bouncy effect
+                        stiffness: 100, // Optional: Adjust stiffness for bounce
+                      }}
+                    >
+                      {char}
+                    </motion.span>
+                  ))}
                 </p>
               </div>
             </div>

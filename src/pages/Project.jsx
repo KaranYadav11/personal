@@ -50,9 +50,14 @@ function Project() {
         />
 
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
-          {projectsData.map((project) => (
+          {projectsData.map((project, index) => (
             <div
-              className={`bg-gradient-to-b from-black to-gray-800/50 rounded-3xl relative after:content-[''] after:z-10 overflow-hidden after:absolute after:inset-0 after:outline-2   after:-outline-offset-2 after:rounded-3xl after:outline after:outline-white/20 md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 after:pointer-events-none`}
+              className={`bg-gradient-to-b from-black to-gray-900 rounded-3xl  after:content-[''] after:z-10 overflow-hidden after:absolute after:inset-0 after:outline-2   after:-outline-offset-2 after:rounded-3xl after:outline after:outline-white/20 md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 after:pointer-events-none sticky z-${
+                index + 100
+              }`}
+              style={{
+                top: `calc(68px + ${index * 20}px)`,
+              }}
               key={project.title}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16 ">
