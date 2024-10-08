@@ -43,7 +43,7 @@ function Footer() {
                 </span>
                 <img
                   src={links.img}
-                  className="h-5 rounded-sm w-auto brightness-120 contrast-120"
+                  className="h-5 rounded-sm w-auto brightness-120 contrast-120 select-none"
                   alt={links.title}
                 />
               </motion.a>
