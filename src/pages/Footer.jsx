@@ -36,8 +36,11 @@ function Footer() {
                 rel="noopener noreferrer" // Security and performance
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
+                whileTap={{ scale: 1.1 }}
               >
-                <span className="font-semibold text-sm">{links.title}</span>
+                <span className="font-semibold text-sm select-none">
+                  {links.title}
+                </span>
                 <img
                   src={links.img}
                   className="h-5 rounded-sm w-auto brightness-120 contrast-120"

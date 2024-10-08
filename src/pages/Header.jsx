@@ -1,24 +1,3 @@
-// function Header() {
-//   return (
-//     <div className="flex justify-center items-center fixed top-3 w-full z-50">
-//       <nav className="flex gap-1 p-0.5 rounded-full border border-white/15 bg-white/10 backdrop-blur">
-//         <a href="#" className="nav-item">
-//           Home
-//         </a>
-//         <a href="#" className="nav-item">
-//           Projects
-//         </a>
-//         <a href="#" className="nav-item">
-//           About
-//         </a>
-//         <a href="#" className="nav-black">
-//           Contact
-//         </a>
-//       </nav>
-//     </div>
-//   );
-// }
-
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 let tabs = [
@@ -42,7 +21,7 @@ function Header({ scrollToSection }) {
   }
   return (
     <div className="flex justify-center items-center fixed top-3 w-full z-50">
-      <nav className="flex gap-1 p-0.5 rounded-full border border-white/15 bg-white/10 backdrop-blur">
+      <nav className="select-none flex gap-1 p-0.5 rounded-full border border-white/15 bg-white/10 backdrop-blur">
         {tabs.map((tab) => (
           <button
             onClick={() => handleClick(tab.id)}
@@ -51,7 +30,7 @@ function Header({ scrollToSection }) {
             // onClick={() => setActiveTab(tab.id)}
             className={`${
               activeTab === tab.id ? "" : "hover:text-white"
-            } nav-item`}
+            } nav-item select-none`}
             style={{
               WebkitTapHighlightColor: "transparent",
             }}

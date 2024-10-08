@@ -16,7 +16,7 @@ function Hero() {
   // };
 
   const animateVariant = {
-    hidden: { opacity: 0, y: 200, scale: 0.95 }, // Slightly scaled down for subtle pop-up effect
+    hidden: { opacity: 0, y: 100, scale: 0.95 }, // Slightly scaled down for subtle pop-up effect
     show: {
       opacity: 1,
       y: 0,
@@ -30,7 +30,7 @@ function Hero() {
     },
   };
   const animateVariantX = {
-    hidden: { opacity: 0, y: -200, scale: 0.95 }, // Slightly scaled down for subtle pop-up effect
+    hidden: { opacity: 0, y: -100, scale: 0.95 }, // Slightly scaled down for subtle pop-up effect
     show: {
       opacity: 1,
       y: 0,
@@ -67,10 +67,10 @@ function Hero() {
           />
           <motion.div
             variants={animateVariantX}
-            className="bg-gray-950 border glow-btn border-gray-700 rounded-lg px-4 p-1.5 inline-flex gap-4 items-center"
+            className="bg-gray-950 border glow-btn select-none border-gray-700 rounded-lg px-4 p-1.5 inline-flex gap-4 items-center"
           >
-            <div className="text-2xl wave-hand">👋🏻</div>
-            <div className="text-sm font-semibold">
+            <div className="text-2xl wave-hand select-none">👋🏻</div>
+            <div className="text-sm font-semibold select-none">
               Hey, I&apos;m <span>Karan</span>
             </div>
           </motion.div>
@@ -83,13 +83,13 @@ function Hero() {
         >
           <motion.h1
             variants={animateVariant}
-            className="font-calistoga text-3xl md:text-5xl text-center mt-8 tracking-wide"
+            className="font-calistoga select-none text-3xl md:text-5xl text-center mt-8 tracking-wide"
           >
             Crafting Dynamic User Experiences with React
           </motion.h1>
           <motion.p
             variants={animateVariant}
-            className="mt-4 text-center text-white/60 md:text-lg tracking-tight"
+            className="mt-4 text-center select-none text-white/60 md:text-lg tracking-tight"
           >
             As a budding React and MERN stack developer, I’m passionate about
             crafting dynamic web applications and eager to immerse myself in

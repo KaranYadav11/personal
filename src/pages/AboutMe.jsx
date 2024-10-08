@@ -5,17 +5,6 @@ import SectionHeader from "../components/SectionHeader";
 import { motion } from "framer-motion";
 
 function AboutMe() {
-  const animateVariant = {
-    hidden: { opacity: 0, y: 40 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.4,
-        duration: 0.6,
-      },
-    },
-  };
   const text =
     "A dedicated React & MERN developer with a strong foundation in JavaScript and expertise in crafting engaging user interfaces with React.js. I thrive on challenges and have honed my problem-solving skills through coding practice on platforms like LeetCode, where I've successfully solved coding problems. I’m constantly learning and exploring new technologies to expand my skills.";
 
@@ -25,9 +14,8 @@ function AboutMe() {
   };
 
   const [isVisible, setIsVisible] = useState(false);
-  const [isVisible2, setIsVisible2] = useState(false);
+
   const textRef = useRef(null); // Ref to attach to the text element
-  const sectionRef = useRef(null);
 
   // Use Intersection Observer to detect when the text comes into view
   useEffect(() => {
@@ -49,25 +37,6 @@ function AboutMe() {
       observer.disconnect(); // Clean up the observer on component unmount
     };
   }, []);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible2(true); // Start animation when in view
-          observer.disconnect(); // Stop observing after animation starts
-        }
-      },
-      { threshold: 0.7 } // Trigger when 30% of the element is visible
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current); // Attach observer to the ref
-    }
-
-    return () => {
-      observer.disconnect(); // Clean up on unmount
-    };
-  }, []);
 
   return (
     <section className="py-16 lg:py-28" id="about">
@@ -78,34 +47,17 @@ function AboutMe() {
           eyebrow="About Me"
         />
         <div className="mt-10 flex flex-col gap-8">
-          <div
-            ref={sectionRef}
-            className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3"
-          >
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <div className="h-[300px] md:h-[250px] lg:h-[230px] md:col-span-3 lg:col-span-3">
-              <div
-                ref={sectionRef}
-                className="flex flex-col p-6 md:px-10 md:py-8"
-              >
-                <motion.div
-                  initial="hidden"
-                  animate={isVisible2 ? "show" : "hidden"} // Animate based on visibility
-                  variants={animateVariant}
-                  className="inline-flex justify-center items-center gap-2"
-                >
-                  <motion.span
-                    variants={animateVariant}
-                    className="text-3xl font-calistoga"
-                  >
+              <div className="flex flex-col p-6 md:px-10 md:py-8">
+                <div className="inline-flex justify-center items-center gap-2">
+                  <span className="text-3xl font-calistoga">
                     Hello , I&apos;m
-                  </motion.span>
-                  <motion.span
-                    variants={animateVariant}
-                    className="font-calistoga text-3xl tracking-wide bg-gradient-to-r from-sky-400 to-gray-300 text-transparent bg-clip-text text-center"
-                  >
+                  </span>
+                  <span className="font-calistoga text-3xl tracking-wide bg-gradient-to-r from-sky-400 to-gray-300 text-transparent bg-clip-text text-center">
                     Karan
-                  </motion.span>
-                </motion.div>
+                  </span>
+                </div>
                 <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                 <p
                   className="text-sm text-center lg:text-base text-white/60 mt-1 lg:mt-2"
