@@ -16,7 +16,7 @@ function Contact() {
             </div>
             <div>
               <a href="mailto:impurewhitee@gmail.com?subject=Contact%20from%20Website">
-                <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2  w-max border border-gray-950">
+                <button className="text-white bg-gray-950 inline-flex items-center px-6 h-12 rounded-xl gap-2  w-max border border-gray-950">
                   <span className="semibold">Contact Me</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -13,7 +13,31 @@ function AboutMe() {
         />
         <div className="mt-10 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            <Card className="h-[180px] md:h-[250px] lg:h-[280px] md:col-span-2 lg:col-span-1">
+            <div className="h-[300px] md:h-[250px] lg:h-[230px] md:col-span-3 lg:col-span-3">
+              <div className="flex flex-col p-6 md:px-10 md:py-8">
+                <div className="inline-flex justify-center items-center gap-2">
+                  <span className="text-3xl font-calistoga">
+                    Hello , I&apos;m
+                  </span>
+                  <span className="font-calistoga text-3xl tracking-wide bg-gradient-to-r from-sky-400 to-gray-300 text-transparent bg-clip-text text-center">
+                    Karan
+                  </span>
+                </div>
+                <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                <p className="text-sm text-center lg:text-base text-white/60 mt-1 lg:mt-2">
+                  A dedicated React & MERN developer with a strong foundation in
+                  JavaScript and expertise in crafting engaging user interfaces
+                  with React.js. I thrive on challenges and have honed my
+                  problem-solving skills through coding practice on platforms
+                  like LeetCode, where I&apos;ve successfully solved 200+ coding
+                  problems. I’m constantly learning and exploring new
+                  technologies to expand my skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <Card className="h-[200px] md:h-[250px] lg:h-[280px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 svgs={
                   <svg
@@ -27,10 +51,10 @@ function AboutMe() {
                   </svg>
                 }
                 title="Education"
-                description="I have a B.Tech degree in Computer Science and Engineering from LKCTC. I have also completed a few online courses in Front-End Development."
+                description="I hold a Bachelor of Technology (B.Tech) degree in Computer Science and Engineering & have done courses in React and JavaScript (Front-End Development)."
               />
             </Card>
-            <Card className="h-[180px] md:h-[250px] lg:h-[280px] md:col-span-3 lg:col-span-2">
+            <Card className="h-[290px] md:h-[250px] lg:h-[280px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 svgs={
                   <svg
@@ -43,30 +67,34 @@ function AboutMe() {
                     <path d="M320-240h60v-80h80v-60h-80v-80h-60v80h-80v60h80v80Zm200-30h200v-60H520v60Zm0-100h200v-60H520v60Zm44-152 56-56 56 56 42-42-56-58 56-56-42-42-56 56-56-56-42 42 56 56-56 58 42 42Zm-314-70h200v-60H250v60Zm-50 472q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
                   </svg>
                 }
-                title="Problem Solving"
-                description="Basic understanding of data structures and algorithms. I have solved a few problems on LeetCode."
+                title="Skills & Tech"
+                description="I have experience working with the MERN stack (MongoDB, Express.js, React.js, Node.js), and I love building dynamic, user-friendly web applications. My passion lies in creating seamless, responsive front-end experiences using React. Through my projects, I've developed efficient back-end services with Node.js and Express, while utilizing MongoDB for effective data management."
               />
             </Card>
           </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            <Card className="h-[180px] md:h-[250px] lg:h-[280px] md:col-span-3 lg:col-span-2">
-              <CardHeader
-                svgs={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="#8B7DBE"
-                  >
-                    <path d="M160-200v-440 440-15 15Zm0 80q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v171q-18-13-38-22.5T800-508v-132H160v440h283q3 21 9 41t15 39H160Zm240-600h160v-80H400v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm20-208v-112h-40v128l86 86 28-28-74-74Z" />
-                  </svg>
-                }
-                title="Experience"
-                description="I have build my portfolio projects by implementing the skills I have learned."
-              />
+          {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <Card className="h-[300px] md:h-[250px] lg:h-[280px] md:col-span-3 lg:col-span-3">
+              <div className="flex flex-col p-6 md:px-10 md:py-8">
+                <div className="inline-flex justify-center items-center gap-2">
+                  <span className="text-3xl font-calistoga">Hello , I'm</span>
+                  <span className="font-calistoga text-3xl tracking-wide bg-gradient-to-r from-sky-400 to-gray-300 text-transparent bg-clip-text text-center">
+                    Karan
+                  </span>
+                </div>
+                <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                <p className="text-sm text-center lg:text-base text-white/60 mt-1 lg:mt-2">
+                  A dedicated React & MERN developer with a strong foundation in
+                  JavaScript and expertise in crafting engaging user interfaces
+                  with React.js. I thrive on challenges and have honed my
+                  problem-solving skills through coding practice on platforms
+                  like LeetCode, where I've successfully solved 200+ coding
+                  problems. I’m constantly learning and exploring new
+                  technologies to expand my skills.
+                </p>
+              </div>
             </Card>
-            <Card className="h-[180px] md:h-[250px] lg:h-[280px]  md:col-span-2 lg:col-span-1">
+          </div> */}
+          {/* <Card className="h-[180px] md:h-[250px] lg:h-[280px]  md:col-span-2 lg:col-span-1">
               <CardHeader
                 svgs={
                   <svg
@@ -82,8 +110,7 @@ function AboutMe() {
                 title="Techinical Skills"
                 description="HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, Tailwind CSS"
               />
-            </Card>
-          </div>
+            </Card> */}
         </div>
       </div>
     </section>

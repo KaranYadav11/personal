@@ -8,10 +8,14 @@ function Hero() {
     }
   };
   return (
-    <div className="py-36 md:py-48 lg:py-52" id="home">
+    <div className="py-36 md:py-36 lg:py-36" id="home">
       <div className="container">
         <div className="flex flex-col items-center">
-          <img className="size-[170px]" src={hero} alt="Your picture" />
+          <img
+            className="size-[170px] brightness-105"
+            src={hero}
+            alt="Avatar"
+          />
           <div className="bg-gray-950 border glow-btn border-gray-700 rounded-lg px-4 p-1.5 inline-flex gap-4 items-center">
             <div className="text-2xl wave-hand">👋🏻</div>
             <div className="text-sm font-semibold">

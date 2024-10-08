@@ -32,6 +32,8 @@ function Footer() {
                 className="inline-flex items-center gap-1.5"
                 href={links.href}
                 key={links.title}
+                target="_blank" // Open link in new tab
+                rel="noopener noreferrer" // Security and performance
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
@@ -39,7 +41,7 @@ function Footer() {
                 <img
                   src={links.img}
                   className="h-5 rounded-sm w-auto brightness-120 contrast-120"
-                  alt="hey"
+                  alt={links.title}
                 />
               </motion.a>
             ))}

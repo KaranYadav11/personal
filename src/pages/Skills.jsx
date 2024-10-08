@@ -34,11 +34,10 @@ function Skills() {
         >
           {skillsData.map((skill) => (
             <motion.li
-              //   drag
               key={skill.id}
-              className={`bg-gradient-to-r from-sky-400 to-gray-300 border border-gray-950 rounded-2xl px-3.5 py-2.5 md:px-4 md:py-3 lg:px-5 lg:py-4${
-                isInView ? "animate-fade-in" : ""
-              }`}
+              className={`bg-gradient-to-r from-sky-400 to-gray-300 border border-gray-950 rounded-2xl px-3.5 py-2.5 md:px-4 md:py-3
+               
+                lg:px-5 lg:py-4${isInView ? "animate-fade-in" : ""}`}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.9 }}
               transition={{ duration: 0.5, delay: skill.id * 0.05 }}
