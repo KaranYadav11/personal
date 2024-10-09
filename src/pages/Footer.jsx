@@ -2,6 +2,7 @@ import Leetcode from "../images/leetcode.png";
 import { motion } from "framer-motion";
 import In from "../images/in.png";
 import Github from "../images/github.png";
+import Text from "../components/Text";
 const footerLinks = [
   {
     title: "LinkedIn",
@@ -19,17 +20,24 @@ const footerLinks = [
     img: Github,
   },
 ];
-
+// const text1 = ["Powered", "Styled"];
+const text2 = ["React", "Tailwind"];
 function Footer() {
   return (
-    <footer className="m-0">
+    <footer className="m-0 ">
+      {/* <Text /> */}
       <div className="container">
-        <div className="border-t border-white/40 gap-8 py-6 text-sm flex flex-col  md:flex-row md:justify-center items-center">
-          {/* <div className="text-white/40">&copy; 2024 All Rights Reserved.</div> */}
+        <div className="border-t border-white/40 gap-8 py-6 text-sm flex flex-col  md:flex-row md:justify-between items-center">
+          <div className="text-white pb-1 items-center ml-[100px] md:ml-0 justify-right  min-w-[250px] relative font-semibold text-lg flex flex-row gap-1 ">
+            <span className="select-none">Build with</span>
+            <span className="absolute inset-y-2 select-none inset-x-[82px]">
+              <Text texts={text2} />
+            </span>
+          </div>
           <nav className="flex flex-col md:flex-row items-center gap-8 md:space-x-10">
             {footerLinks.map((links) => (
               <motion.a
-                className="inline-flex items-center gap-1.5"
+                className="inline-flex items-center gap-1.5 tracking-wide"
                 href={links.href}
                 key={links.title}
                 target="_blank" // Open link in new tab
