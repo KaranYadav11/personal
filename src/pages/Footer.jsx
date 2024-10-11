@@ -33,7 +33,7 @@ function Footer() {
                 <Text texts={text} />
               </span>
             </div>
-            <nav className="flex flex-col md:flex-row items-center gap-8 md:gap-6 md:space-x-10">
+            <nav className="flex flex-row md:flex-row items-center gap-8 md:gap-6 md:space-x-10">
               {footerLinks.map((links) => (
                 <motion.a
                   className="inline-flex items-center gap-1.5  tracking-wide"
