@@ -28,12 +28,12 @@ function Footer() {
         <div className="container">
           <div className="border-t border-white/40 gap-8 py-6 text-sm flex flex-col  md:flex-row md:justify-between items-center">
             <div className="text-white pb-1 items-center ml-[100px] md:ml-0 justify-right  min-w-[250px] relative font-semibold text-lg flex flex-row gap-1 ">
-              <span className="select-none">Build with x</span>
+              <span className="select-none">Build with </span>
               <span className="absolute inset-y-2 select-none inset-x-[82px]">
                 <Text texts={text} />
               </span>
             </div>
-            <nav className="flex flex-col md:flex-row items-center gap-8 md:space-x-10">
+            <nav className="flex flex-col md:flex-row items-center gap-8 md:gap-6 md:space-x-10">
               {footerLinks.map((links) => (
                 <motion.a
                   className="inline-flex items-center gap-1.5  tracking-wide"
@@ -45,9 +45,9 @@ function Footer() {
                   transition={{ duration: 0.3 }}
                   whileTap={{ scale: 1.1 }}
                 >
-                  <span className="font-semibold text-sm select-none">
+                  {/* <span className="font-semibold text-sm select-none">
                     {links.title}
-                  </span>
+                  </span> */}
                   <img
                     src={links.img}
                     className="h-5 rounded-sm w-auto brightness-120 contrast-120 select-none"
