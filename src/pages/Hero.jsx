@@ -38,6 +38,18 @@ function Hero() {
       projectsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const handleClick = () => {
+    // Log a message to see if the click event is triggered
+    console.log("Button clicked!");
+
+    // Check if vibration is supported
+    if ("vibrate" in navigator) {
+      console.log("Vibration is supported");
+      navigator.vibrate(100); // Vibrate for 50 milliseconds
+    } else {
+      console.log("Vibration is NOT supported on this device.");
+    }
+  };
   return (
     <div className="py-36 md:py-36 lg:py-36" id="home">
       <div className="container">
@@ -90,7 +102,10 @@ function Hero() {
           variants={animateVariantBottom}
           className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8"
         >
-          <ShinyButton scrollToProjects={scrollToProjects} />
+          <ShinyButton
+            handleClick={handleClick}
+            scrollToProjects={scrollToProjects}
+          />
           {/* <button
             onClick={scrollToProjects}
             className="inline-flex items-center gap-2 border border-white/15 px-6 mt-1 h-12 rounded-xl"

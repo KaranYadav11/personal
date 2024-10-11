@@ -1,10 +1,18 @@
 import { motion } from "framer-motion";
 
 // eslint-disable-next-line react/prop-types
-const ShinyButton = ({ scrollToProjects }) => {
+const ShinyButton = ({ scrollToProjects, handleClick }) => {
+  const handleClicker = () => {
+    if (scrollToProjects) {
+      scrollToProjects(); // Call the scroll function
+    }
+    if (handleClick) {
+      handleClick(); // Call the additional onClick function if provided
+    }
+  };
   return (
     <motion.button
-      onClick={scrollToProjects}
+      onClick={handleClicker}
       className="select-none relative inline-flex items-center gap-2 border border-white/15 px-6 mt-1 h-12 rounded-xl overflow-hidden"
       whileHover={{ scale: 0.98 }} // Slight scale on hover
       whileTap={{ scale: 0.98 }}

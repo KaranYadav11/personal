@@ -16,7 +16,7 @@ const Text = ({ texts }) => {
   }, [texts.length]);
 
   return (
-    <div className="relative inline-block w-[40px] text-center bg-pink-600">
+    <div className="relative inline-block w-[40px] text-center">
       <AnimatePresence mode="wait">
         <motion.span
           key={texts[currentIndex]}
@@ -30,7 +30,7 @@ const Text = ({ texts }) => {
             damping: 30,
             stiffness: 400,
           }}
-          className="select-none absolute bottom-0 left-1 bg-orange-600 left- bg-gradient-to-r from-sky-400 to-gray-300  bg-clip-text text-transparent font-bold text-lg tracking-normal"
+          className="select-none absolute bottom-0 left-1 bg-gradient-to-r from-sky-400 to-gray-300  bg-clip-text text-transparent font-bold text-lg tracking-normal"
         >
           {texts[currentIndex]}
         </motion.span>
