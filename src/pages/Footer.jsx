@@ -28,7 +28,7 @@ function Footer() {
           <div className="border-t border-white/40 gap-8 py-6 text-sm flex flex-col  md:flex-row md:justify-between items-center">
             <div className="text-white pb-1 items-center ml-[100px] md:ml-0 justify-right  min-w-[250px] relative font-semibold text-lg flex flex-row gap-1 ">
               <span className="select-none">Build with</span>
-              <span className="absolute inset-y-[7.2px] select-none inset-x-[81.7px]">
+              <span className="absolute inset-y-2 select-none inset-x-[81.7px]">
                 <Text texts={text} />
               </span>
             </div>
