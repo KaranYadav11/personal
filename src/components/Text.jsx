@@ -27,8 +27,8 @@ const Text = ({ texts }) => {
             duration: 0.4,
             type: "spring",
             mass: 0.2,
-            damping: 30,
-            stiffness: 400,
+            damping: 40,
+            stiffness: 500,
           }}
           className="select-none absolute bottom-0 left-1 bg-gradient-to-r from-sky-400 to-gray-300  bg-clip-text text-transparent font-bold text-lg tracking-normal"
         >

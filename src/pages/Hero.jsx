@@ -40,7 +40,6 @@ function Hero() {
   };
   const handleClick = () => {
     if ("vibrate" in navigator) {
-      console.log("Vibration is supported");
       navigator.vibrate(20);
     } else {
       console.log("Vibration is NOT supported on this device.");
