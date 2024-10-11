@@ -45,7 +45,7 @@ function Hero() {
     // Check if vibration is supported
     if ("vibrate" in navigator) {
       console.log("Vibration is supported");
-      navigator.vibrate(100); // Vibrate for 50 milliseconds
+      navigator.vibrate(50); // Vibrate for 50 milliseconds
     } else {
       console.log("Vibration is NOT supported on this device.");
     }
