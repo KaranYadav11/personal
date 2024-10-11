@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
-import Black from "../images/black.png";
+// import Black from "../images/black.png";
+import Black from "../images/b2.png";
 import Github from "../images/github.png";
 import Text from "../components/Text";
 
