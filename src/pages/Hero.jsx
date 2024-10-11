@@ -39,13 +39,9 @@ function Hero() {
     }
   };
   const handleClick = () => {
-    // Log a message to see if the click event is triggered
-    console.log("Button clicked!");
-
-    // Check if vibration is supported
     if ("vibrate" in navigator) {
       console.log("Vibration is supported");
-      navigator.vibrate(50); // Vibrate for 50 milliseconds
+      navigator.vibrate(20);
     } else {
       console.log("Vibration is NOT supported on this device.");
     }
