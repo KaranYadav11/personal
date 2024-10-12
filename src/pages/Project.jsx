@@ -1,13 +1,13 @@
 import SectionHeader from "../components/SectionHeader";
 import Image from "../images/projectImage.jpg";
-import P from "../images/pro1.jpg";
+import P from "../images/z1.jpg";
 const projectsData = [
   {
     company: "Next Hire",
     year: "2024",
     title: "Job Portal Website",
     results: [
-      { title: "Enhanced user experience by 40%" },
+      { title: "Build Using MERN Stack" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],

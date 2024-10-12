@@ -48,7 +48,7 @@ function AboutMe() {
         />
         <div className="mt-10 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            <div className="h-[300px] md:h-[250px] lg:h-[230px] md:col-span-3 lg:col-span-3">
+            <div className="h-[300px] md:h-[250px] lg:h-[230px] md:col-span-5 lg:col-span-3">
               <div className="flex flex-col p-6 md:px-10 md:py-8">
                 <div className="inline-flex justify-center items-center gap-2">
                   <span className="text-3xl font-calistoga">
