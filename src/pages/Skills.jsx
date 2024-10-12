@@ -54,4 +54,3 @@ function Skills() {
 }
 
 export default Skills;
-// flex gap-2 items-center

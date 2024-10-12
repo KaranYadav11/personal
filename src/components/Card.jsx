@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 
+// eslint-disable-next-line react/prop-types
 function Card({ className, children }) {
   return (
     <div
@@ -12,7 +13,5 @@ function Card({ className, children }) {
     </div>
   );
 }
-//bg-gradient-to-b from-white/10 to-transparent
-//bg-gradient-to-b from-black to-gray-800/50
 
 export default Card;

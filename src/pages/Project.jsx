@@ -1,29 +1,30 @@
 import SectionHeader from "../components/SectionHeader";
 import Image from "../images/projectImage.jpg";
+import P from "../images/pro1.jpg";
 const projectsData = [
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Next Hire",
+    year: "2024",
+    title: "Job Portal Website",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/Z7I5uSRHMHg",
-    image: { Image },
+    image: [P],
   },
   {
     company: "Neural Nexus",
     year: "2024",
-    title: "Machine Learning Platform",
+    title: "Machine Learning ",
     results: [
       { title: "Boosted model accuracy by 15%" },
       { title: "Reduced training time by 30%" },
       { title: "Expanded dataset by 20%" },
     ],
     link: "https://youtu.be/XYz123ABCDE",
-    image: { Image },
+    image: [Image],
   },
   {
     company: "Dataverse",
@@ -35,7 +36,7 @@ const projectsData = [
       { title: "Improved data security measures by 30%" },
     ],
     link: "https://youtu.be/1234567890",
-    image: { Image },
+    image: [Image],
   },
 ];
 function Project() {
@@ -52,7 +53,7 @@ function Project() {
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
           {projectsData.map((project, index) => (
             <div
-              className={`bg-gradient-to-b from-black to-gray-900 rounded-3xl  after:content-[''] after:z-10 overflow-hidden after:absolute after:inset-0 after:outline-2   after:-outline-offset-2 after:rounded-3xl after:outline after:outline-white/20 md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 after:pointer-events-none sticky z-${
+              className={`bg-gradient-to-b from-black to-gray-900 rounded-3xl  after:content-[''] after:z-10 overflow-hidden after:absolute after:inset-0 after:outline-2 after:-outline-offset-2 after:rounded-3xl after:outline after:outline-white/20 md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 after:pointer-events-none sticky z-${
                 index + 100
               }`}
               style={{
@@ -107,8 +108,8 @@ function Project() {
                 </div>
                 <div className="relative">
                   <img
-                    className="mt-8 rounded-md -mb-4 lg:mt-0 md:mb-0 lg:absolute lg:h-full lg:w-auto lg:rounded-2xl lg:max-w-none "
-                    src={project.image.Image}
+                    className="mt-8 rounded-md lg:rounded-b-none -mb-4 lg:mt-0 md:-mb-0 lg:absolute lg:h-full lg:w-auto lg:rounded-2xl lg:max-w-none "
+                    src={project.image[0]}
                     alt={project.title}
                   />
                 </div>

@@ -27,7 +27,6 @@ function Header({ scrollToSection }) {
             onClick={() => handleClick(tab.id)}
             href={`#${tab.id}`}
             key={tab.id}
-            // onClick={() => setActiveTab(tab.id)}
             className={`${
               activeTab === tab.id ? "" : "hover:text-white"
             } nav-item select-none`}
