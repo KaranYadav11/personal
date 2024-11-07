@@ -1,4 +1,5 @@
 import ShinyButton from "../components/ShinyButton";
+// import Tech from "../components/Tech";
 import hero from "../images/your.png";
 import { motion } from "framer-motion";
 
@@ -91,6 +92,7 @@ function Hero() {
             solving complex coding challenges
           </motion.p>
         </motion.div>
+
         <motion.div
           initial="hidden"
           animate="show"

@@ -5,6 +5,7 @@ import Project from "./pages/Project";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
+
 function App() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -14,6 +15,7 @@ function App() {
     <div>
       <Header scrollToSection={scrollToSection} />
       <Hero />
+
       <Project />
       <AboutMe />
       <Skills />

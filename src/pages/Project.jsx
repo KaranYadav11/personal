@@ -1,43 +1,67 @@
 import SectionHeader from "../components/SectionHeader";
 import Image from "../images/projectImage.jpg";
 import P from "../images/z1.jpg";
+import render2 from "../images/render2.png";
+
 const projectsData = [
   {
-    company: "Next Hire",
+    company: "Snapzy",
+    year: "2024",
+    title: "Social Media Website",
+    results: [
+      { title: "React" },
+      { title: "Redux" },
+      { title: "Express" },
+      { title: "MongoDB " },
+      { title: "Mongoose" },
+      { title: "Node" },
+      { title: "JWT" },
+      { title: "Socket.io" },
+      { title: "Shadcn" },
+      { title: "TailwindCSS" },
+    ],
+    link: "https://snapzy.onrender.com",
+    image: [render2],
+  },
+  {
+    company: "NextHire",
     year: "2024",
     title: "Job Portal Website",
     results: [
-      { title: "Build Using MERN Stack" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "React" },
+      { title: "Redux" },
+      { title: "Express" },
+      { title: "MongoDB " },
+      { title: "Mongoose" },
+      { title: "Node" },
+      { title: "JWT" },
+
+      { title: "Shadcn" },
+      { title: "TailwindCSS" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "example.com",
     image: [P],
   },
-  {
-    company: "Neural Nexus",
-    year: "2024",
-    title: "Machine Learning ",
-    results: [
-      { title: "Boosted model accuracy by 15%" },
-      { title: "Reduced training time by 30%" },
-      { title: "Expanded dataset by 20%" },
-    ],
-    link: "https://youtu.be/XYz123ABCDE",
-    image: [Image],
-  },
-  {
-    company: "Dataverse",
-    year: "2022",
-    title: "Data Analytics Tool",
-    results: [
-      { title: "Increased data visualization efficiency by 25%" },
-      { title: "Enhanced data cleaning capabilities by 40%" },
-      { title: "Improved data security measures by 30%" },
-    ],
-    link: "https://youtu.be/1234567890",
-    image: [Image],
-  },
+
+  // {
+  //   company: "Dataverse",
+  //   year: "2022",
+  //   title: "Data Analytics Tool",
+  //   results: [
+  //     { title: "React" },
+  //     { title: "TailwindCSS" },
+  //     { title: "Redux" },
+  //     { title: "Express" },
+  //     { title: "MongoDB Atlas" },
+  //     { title: "Mongoose" },
+  //     { title: "Node" },
+  //     { title: "JWT" },
+  //     { title: "Postman" },
+  //     { title: "Shadcn" },
+  //   ],
+  //   link: "https://youtu.be/1234567890",
+  //   image: [Image],
+  // },
 ];
 function Project() {
   return (
@@ -73,18 +97,18 @@ function Project() {
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                    {project.results.map((result) => (
+
+                  <ul className="flex flex-wrap mt-4 items-center md:mt-5 px-1 justify-start gap-2  text-sm text-gray-950 font-semibold">
+                    {project.results.map((title) => (
                       <li
-                        key={result.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50"
+                        key={title.title}
+                        className={`select-none bg-gradient-to-r from-sky-400  to-gray-300 border border-gray-950 rounded-xl px-3.5 py-[7px] md:px-3.5 md:py-2 `}
                       >
-                        <span>✔️</span>
-                        <span>{result.title}</span>
+                        <span>{title.title}</span>
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a target="_blank" href={project.link}>
                     <button
                       className="bg-white text-gray-950 h-12 w-full
                 md:w-auto  px-6  rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8"

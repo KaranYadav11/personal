@@ -1,13 +1,14 @@
 import SectionHeader from "../components/SectionHeader";
-
 import { motion } from "framer-motion";
-
 import useSectionInView from "../utils/useSection";
 
 function Skills() {
   const { ref, isInView } = useSectionInView("#skills");
   const skillsData = [
-    { id: 1, skill: "HTML5" },
+    {
+      id: 1,
+      skill: "HTML5",
+    },
     { id: 2, skill: "CSS3" },
     { id: 3, skill: "React" },
     { id: 4, skill: "Node" },
