@@ -1,5 +1,5 @@
 import ShinyButton from "../components/ShinyButton";
-// import Tech from "../components/Tech";
+import Tech from "../components/Tech";
 import hero from "../images/your.png";
 import { motion } from "framer-motion";
 
@@ -83,14 +83,15 @@ function Hero() {
           >
             Crafting Dynamic User Experiences with React
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             variants={animateVariantBottom}
             className="mt-4 text-center select-none text-white/60 md:text-lg tracking-tight"
           >
             As a budding React and MERN stack developer, I’m passionate about
             crafting dynamic web applications and eager to immerse myself in
             solving complex coding challenges
-          </motion.p>
+          </motion.p> */}
+          <Tech></Tech>
         </motion.div>
 
         <motion.div
@@ -103,24 +104,6 @@ function Hero() {
             handleClick={handleClick}
             scrollToProjects={scrollToProjects}
           />
-          {/* <button
-            onClick={scrollToProjects}
-            className="inline-flex items-center gap-2 border border-white/15 px-6 mt-1 h-12 rounded-xl"
-          >
-            <span className="font-semibold">Explore</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="22px"
-              fill="#5e91ff"
-            >
-              <path d="M479.33-226.67 225-482l58.67-59.33 154.66 152.66v-382.66h84v384l153.34-153.34 58.66 59-255 255Z" />
-            </svg>
-          </button> */}
-          {/* <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900  h-12 px-6 rounded-xl">
-            <span className="font-semibold">Let's Connect</span>
-          </button> */}
         </motion.div>
       </div>
     </div>

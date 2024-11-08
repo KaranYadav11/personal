@@ -2,7 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import Image from "../images/projectImage.jpg";
 import P from "../images/z1.jpg";
 import render2 from "../images/render2.png";
-
+import { CornerDownRight } from "lucide-react";
 const projectsData = [
   {
     company: "Snapzy",
@@ -110,29 +110,29 @@ function Project() {
                   </ul>
                   <a target="_blank" href={project.link}>
                     <button
-                      className="bg-white text-gray-950 h-12 w-full
-                md:w-auto  px-6  rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8"
+                      className="bg-white text-gray-950 h-10 w-full
+                md:w-auto  px-6  rounded-full  font-semibold inline-flex justify-center items-center gap-2 mt-8"
                     >
-                      <svg
+                      {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="24px"
                         viewBox="0 -960 960 960"
-                        width="22px"
+                        width="20px"
                         fill="#1c1c1b"
                       >
                         <path
                           transform="rotate(-90, 480, -480)"
                           d="M479.33-226.67 225-482l58.67-59.33 154.66 152.66v-382.66h84v384l153.34-153.34 58.66 59-255 255Z"
                         />
-                      </svg>
-
-                      <span>Visit Site</span>
+                      </svg> */}
+                      <CornerDownRight size={18} strokeWidth={2.5} />
+                      <span>View Live</span>
                     </button>
                   </a>
                 </div>
                 <div className="relative">
                   <img
-                    className="mt-8 rounded-md lg:rounded-b-none -mb-4 lg:mt-0 md:-mb-0 lg:absolute lg:h-full lg:w-auto lg:rounded-2xl lg:max-w-none "
+                    className="mt-8 rounded-md lg:rounded-b-none -mb-4 lg:mt-0 md:-mb-0 lg:absolute  lg:h-full lg:w-auto lg:rounded-2xl lg:max-w-none "
                     src={project.image[0]}
                     alt={project.title}
                   />
