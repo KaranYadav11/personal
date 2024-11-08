@@ -70,7 +70,8 @@ function Project() {
         <SectionHeader
           title="Featured Project"
           eyebrow="Real World Projects"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam eius eligendi culpa eaque facere veritatis laborum necessitatibus quis ipsum!
+          description="Here are some of my featured projects.
+          Ranging from social media website to job portal.
       "
         />
 
