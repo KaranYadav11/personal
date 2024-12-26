@@ -1,21 +1,20 @@
 import SectionHeader from "../components/SectionHeader";
-import Image from "../images/projectImage.jpg";
-import P from "../images/z1.jpg";
+import writeit from "../images/writeit.png";
 import render2 from "../images/render2.png";
 import { CornerDownRight } from "lucide-react";
 const projectsData = [
   {
     company: "Snapzy",
     year: "2024",
-    title: "Social Media Website",
+    title: "Social Media Platform",
     results: [
       { title: "React" },
-      { title: "Redux" },
+      { title: "Node" },
+      { title: "Redux Toolkit" },
       { title: "Express" },
       { title: "MongoDB " },
-      { title: "Mongoose" },
-      { title: "Node" },
       { title: "JWT" },
+      { title: "Mongoose" },
       { title: "Socket.io" },
       { title: "Shadcn" },
       { title: "TailwindCSS" },
@@ -26,21 +25,20 @@ const projectsData = [
   {
     company: "NextHire",
     year: "2024",
-    title: "Job Portal Website",
+    title: "Blog Platform",
     results: [
       { title: "React" },
-      { title: "Redux" },
+      { title: "Node" },
+      { title: "Redux Toolkit" },
       { title: "Express" },
       { title: "MongoDB " },
-      { title: "Mongoose" },
-      { title: "Node" },
       { title: "JWT" },
-
-      { title: "Shadcn" },
+      { title: "Mongoose" },
+      { title: "TanStack Query" },
       { title: "TailwindCSS" },
     ],
-    link: "example.com",
-    image: [P],
+    link: "https://writeit-kgeb.onrender.com/",
+    image: [writeit],
   },
 
   // {

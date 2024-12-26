@@ -1,37 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import Card from "../components/Card";
-import CardHeader from "../components/CardHeader";
 import SectionHeader from "../components/SectionHeader";
-import { motion } from "framer-motion";
 
 function AboutMe() {
   const text =
     "A dedicated React & MERN developer with a strong foundation in JavaScript and expertise in crafting engaging user interfaces with React.js. I thrive on challenges and have honed my problem-solving skills through coding practice on platforms like LeetCode, where I've successfully solved coding problems.\n I’m constantly learning and exploring new technologies to expand my skills. I hold a Bachelor of Technology (B.Tech) degree in Computer Science and Engineering & have done courses in React and JavaScript (Front-End Development). Through my projects, I've developed efficient back-end services with Node.js and Express, while utilizing MongoDB for effective data management.";
-
-  // const [isVisible, setIsVisible] = useState(false);
-  // const textRef = useRef(null);
-
-  // Use Intersection Observer to detect when the text comes into view
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       if (entry.isIntersecting) {
-  //         setIsVisible(true);
-  //         observer.disconnect();
-  //       }
-  //     },
-  //     { threshold: 0.2 }
-  //   );
-
-  //   if (textRef.current) {
-  //     observer.observe(textRef.current);
-  //   }
-
-  //   return () => {
-  //     observer.disconnect();
-  //   };
-  // }, []);
-
   return (
     <section className="py-16 mb-16 lg:py-28" id="about">
       <div className="container">
