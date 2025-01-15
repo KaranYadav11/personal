@@ -17,7 +17,7 @@ function Skills() {
     { id: 7, skill: "MongoDB" },
     { id: 8, skill: "RESTful API" },
     { id: 9, skill: "C++" },
-    { id: 10, skill: "Tailwind" },
+    { id: 10, skill: "Tailwind CSS" },
   ];
 
   return (

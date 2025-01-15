@@ -17,7 +17,7 @@ const projectsData = [
       { title: "Mongoose" },
       { title: "Socket.io" },
       { title: "Shadcn" },
-      { title: "TailwindCSS" },
+      { title: "Tailwind CSS" },
     ],
     link: "https://snapzy.onrender.com",
     image: [render2],
@@ -35,7 +35,7 @@ const projectsData = [
       { title: "JWT" },
       { title: "Mongoose" },
       { title: "TanStack Query" },
-      { title: "TailwindCSS" },
+      { title: "Tailwind CSS" },
     ],
     link: "https://writeit-kgeb.onrender.com/",
     image: [writeit],
@@ -69,7 +69,7 @@ function Project() {
           title="Featured Project"
           eyebrow="Real World Projects"
           description="Here are some of my featured projects.
-          Ranging from social media website to job portal.
+          Ranging from social media platform to blog platform.
       "
         />
 

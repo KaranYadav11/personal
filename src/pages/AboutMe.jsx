@@ -2,7 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 
 function AboutMe() {
   const text =
-    "A dedicated React & MERN developer with a strong foundation in JavaScript and expertise in crafting engaging user interfaces with React.js. I thrive on challenges and have honed my problem-solving skills through coding practice on platforms like LeetCode, where I've successfully solved coding problems.\n I’m constantly learning and exploring new technologies to expand my skills. I hold a Bachelor of Technology (B.Tech) degree in Computer Science and Engineering & have done courses in React and JavaScript (Front-End Development). Through my projects, I've developed efficient back-end services with Node.js and Express, while utilizing MongoDB for effective data management.";
+    "A dedicated MERN stack developer with expertise in JavaScript, React.js, Node.js, Express.js, and MongoDB. I build dynamic, user-centric web applications, ensuring scalability and performance. I thrive on solving complex problems and am committed to continuous learning. I hold a B.Tech in Computer Science Engineering and have completed courses in React.js and JavaScript. Through hands-on projects, I’ve delivered end-to-end solutions, aiming to write clean, maintainable, and impactful code";
   return (
     <section className="py-16 mb-16 lg:py-28" id="about">
       <div className="container">
@@ -26,7 +26,7 @@ function AboutMe() {
                 <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                 <p
                   style={{ whiteSpace: "pre-line" }}
-                  className="text-sm h-fit text-center lg:text-base text-white/60 mt-1 lg:mt-2"
+                  className="text-sm h-fit max-w-full overflow-auto-break-word text-center lg:text-base text-white/60  mt-1 lg:mt-2"
                 >
                   {text}
                 </p>
