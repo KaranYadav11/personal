@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const BackgroundLines = ({ children, className, svgOptions }) => {
   return (
-    <div className={cn("h-fit w-full bg-white dark:bg-black", className)}>
+    <div className={cn("h-[90vh] w-full bg-white dark:bg-black", className)}>
       <SVG svgOptions={svgOptions} />
       {children}
     </div>
@@ -82,7 +82,7 @@ const SVG = ({ svgOptions }) => {
         <motion.path
           d={path}
           stroke={colors[idx]}
-          strokeWidth="2.3"
+          strokeWidth="2.5"
           strokeLinecap="round"
           variants={pathVariants}
           initial="initial"
