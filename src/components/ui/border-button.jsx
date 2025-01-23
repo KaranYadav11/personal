@@ -24,7 +24,7 @@ export function Button({
     <Component
       onClick={handleDownload}
       className={cn(
-        " bg-transparent w-[140px] relative text-xl font-inter font-bold  h-[51px]  p-[1.5px] overflow-hidden ",
+        " bg-transparent w-[140px] relative  h-[51px]  p-[1.5px] overflow-hidden ",
         containerClassName
       )}
       style={{
