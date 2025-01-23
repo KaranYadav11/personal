@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 
 export const BackgroundLines = ({ children, className, svgOptions }) => {
   return (
-    <div
-      className={cn(
-        "h-[20rem] md:h-screen w-full bg-white dark:bg-black",
-        className
-      )}
-    >
+    <div className={cn("h-fit w-full bg-white dark:bg-black", className)}>
       <SVG svgOptions={svgOptions} />
       {children}
     </div>
