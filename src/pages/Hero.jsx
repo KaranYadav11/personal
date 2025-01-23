@@ -8,6 +8,10 @@ import { motion } from "framer-motion";
 function Hero() {
   const words = ["Karan Yadav", "MERN Developer", "React Developer"];
   const handleDownload = () => {
+    if (navigator.vibrate) {
+      navigator.vibrate(50);
+    }
+
     const resumeUrl = "/resume.pdf";
     const link = document.createElement("a");
     link.href = resumeUrl;
@@ -120,7 +124,9 @@ function Hero() {
             containerClassName="select-none mt-1"
           >
             <div className="flex items-center gap-3 justify-center ">
-              <span className="text-white font-semibold">Resume</span>
+              <span className="text-white relative z-10 font-semibold">
+                Resume
+              </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="21px"
