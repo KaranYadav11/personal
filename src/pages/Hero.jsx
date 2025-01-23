@@ -2,8 +2,6 @@ import ShinyButton from "../components/ShinyButton";
 import Tech from "../components/Tech";
 import { Button } from "../components/ui/border-button";
 import { FlipWords } from "../components/ui/flip-words";
-import { BackgroundLines } from "../components/ui/lines";
-import { SparklesCore } from "../components/ui/sparkles";
 import hero from "../images/your.png";
 import { motion } from "framer-motion";
 
@@ -67,17 +65,7 @@ function Hero() {
   return (
     <div className="py-36 md:py-36 lg:py-36 " id="home">
       {/* <BackgroundLines className=""> */}
-      <div className="w-full absolute inset-0 h-screen">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>
+
       <div className="container">
         <motion.div
           initial="hidden"

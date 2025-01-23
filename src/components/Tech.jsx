@@ -1,8 +1,8 @@
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiRedux } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaGithub, FaNpm, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { InfiniteMovingCards } from "./ui/infinite-cards";
 function Tech() {
@@ -12,8 +12,16 @@ function Tech() {
       color: "#61DAFB", // React blue
     },
     {
+      icon: <SiRedux />,
+      color: "#764ABC", // React blue
+    },
+    {
       icon: <SiNodedotjs />,
       color: "#339933", // Node.js green
+    },
+    {
+      icon: <FaNpm />,
+      color: "#CB3837", // Node.js green
     },
     {
       icon: <SiMongodb />,
@@ -30,6 +38,10 @@ function Tech() {
     {
       icon: <SiTailwindcss />,
       color: "#38BDF8", // Tailwind CSS blue
+    },
+    {
+      icon: <FaGithub />,
+      color: "#ffffff", // Tailwind CSS blue
     },
   ];
 
