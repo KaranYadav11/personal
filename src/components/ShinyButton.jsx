@@ -13,7 +13,7 @@ const ShinyButton = ({ scrollToProjects, handleClick }) => {
   return (
     <motion.button
       onClick={handleClicker}
-      className="select-none relative inline-flex items-center gap-2 border border-white/15 px-6 mt-1 h-12 rounded-xl overflow-hidden"
+      className="select-none relative inline-flex items-center gap-2 border border-white/15 px-6 mt-1 h-12 rounded-xl overflow-hidden bg-black"
       whileHover={{ scale: 0.98 }} // Slight scale on hover
       whileTap={{ scale: 0.98 }}
       initial="rest"
