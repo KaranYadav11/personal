@@ -79,7 +79,7 @@ export const InfiniteMovingCards = ({
           <li
             className="w-fit max-w-full relative rounded-2xl  flex-shrink-0  px-2 py-2 md:w-fit"
             style={{
-              background: "black",
+              background: "",
             }}
             key={idx} // Use index as key since there are no unique fields
           >
