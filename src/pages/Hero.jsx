@@ -2,6 +2,7 @@ import ShinyButton from "../components/ShinyButton";
 import Tech from "../components/Tech";
 import { Button } from "../components/ui/border-button";
 import { FlipWords } from "../components/ui/flip-words";
+import { GridBackground } from "../components/ui/grid";
 import hero from "../images/your.png";
 import { motion } from "framer-motion";
 
@@ -64,9 +65,10 @@ function Hero() {
   };
   return (
     <div className="py-36 md:py-36 lg:py-36 " id="home">
-      {/* <BackgroundLines className=""> */}
-
-      <div className="container">
+      <div className="absolute inset-0 z-0">
+        <GridBackground />
+      </div>
+      <div className="container relative z-10">
         <motion.div
           initial="hidden"
           animate="show"
@@ -143,7 +145,6 @@ function Hero() {
           </Button>
         </motion.div>
       </div>
-      {/* </BackgroundLines> */}
     </div>
   );
 }

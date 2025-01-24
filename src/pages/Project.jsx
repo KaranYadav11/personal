@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import writeit from "../images/writeit.png";
 import render2 from "../images/render2.png";
 import { CornerDownRight } from "lucide-react";
+import { Meteors } from "../components/ui/meteors";
 const projectsData = [
   {
     company: "Snapzy",
@@ -137,6 +138,7 @@ function Project() {
                   />
                 </div>
               </div>
+              <Meteors number={17} />
             </div>
           ))}
         </div>
