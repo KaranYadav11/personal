@@ -19,10 +19,7 @@ function Tech() {
       icon: <SiNodedotjs />,
       color: "#339933", // Node.js green
     },
-    {
-      icon: <FaNpm />,
-      color: "#CB3837", // Node.js green
-    },
+
     {
       icon: <SiMongodb />,
       color: "#47A248", // MongoDB green
@@ -42,6 +39,10 @@ function Tech() {
     {
       icon: <FaGithub />,
       color: "#ffffff", // Tailwind CSS blue
+    },
+    {
+      icon: <FaNpm />,
+      color: "#CB3837", // Node.js green
     },
   ];
 
