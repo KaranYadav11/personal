@@ -24,7 +24,7 @@ const projectsData = [
     image: [render2],
   },
   {
-    company: "NextHire",
+    company: "Write It",
     year: "2024",
     title: "Blog Platform",
     results: [
